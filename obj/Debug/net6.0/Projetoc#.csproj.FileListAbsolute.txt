@@ -1,0 +1,15 @@
+C:\Users\thiag\Desktop\Front-End\Projetoc#\bin\Debug\net6.0\Projetoc#.exe
+C:\Users\thiag\Desktop\Front-End\Projetoc#\bin\Debug\net6.0\Projetoc#.deps.json
+C:\Users\thiag\Desktop\Front-End\Projetoc#\bin\Debug\net6.0\Projetoc#.runtimeconfig.json
+C:\Users\thiag\Desktop\Front-End\Projetoc#\bin\Debug\net6.0\Projetoc#.dll
+C:\Users\thiag\Desktop\Front-End\Projetoc#\bin\Debug\net6.0\Projetoc#.pdb
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.csproj.AssemblyReference.cache
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.AssemblyInfoInputs.cache
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.AssemblyInfo.cs
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.csproj.CoreCompileInputs.cache
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.dll
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\refint\Projetoc#.dll
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.pdb
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\Projetoc#.genruntimeconfig.cache
+C:\Users\thiag\Desktop\Front-End\Projetoc#\obj\Debug\net6.0\ref\Projetoc#.dll
