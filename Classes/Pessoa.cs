@@ -14,7 +14,7 @@ namespace Projetoc_.Classes
      //get set pode ser alterado e consultado "?" diz que a variavel nome está sendo carregada vazia
      public string? nome {get; set;}
 
-     public string? endereco {get; set;}
+     public Endereco? endereco {get; set;}
 
      public float rendimento {get; set;}
 

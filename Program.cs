@@ -9,11 +9,11 @@ Pessoajuritica novaPessoajuridica = new Pessoajuritica();
 
 novaPessoafisica.nome = "Thiago";
 novaPessoafisica.cpf = 494745638;
-novaPessoafisica.dataNac = new DateTime(192,01,01);
-novaPessoafisica.endereco = "Rua dos bamdeirantes n-07";
+novaPessoafisica.dataNac = new DateTime(192, 01, 01);
+/*novaPessoafisica.endereco = "Rua dos bamdeirantes n-07";*/
 novaPessoafisica.rendimento = 4000.00f; // para força ele a converter para float
 
-
+/*
 //imprimindo
 Console.WriteLine(novaPessoafisica.nome);
 Console.WriteLine(novaPessoafisica.cpf);
@@ -42,6 +42,36 @@ Console.WriteLine($"RENDIMENTO: {novaPessoafisica.rendimento}");
 Console.WriteLine(novaPessoafisica.CalcularImposto(novaPessoafisica.rendimento));
 
 float valor = novaPessoajuridica.rendimento = 16600;
-Console.WriteLine(novaPessoajuridica.CalcularImposto(valor));
+Console.WriteLine(novaPessoajuridica.CalcularImposto(valor));*/
 
 /*temos como formatar os valores a serem apresentados */
+
+
+                                      //começa no formato americano  month-day-year (mês-dia-ano).
+DateTime dataNacimento = new DateTime (1992,02,13);
+
+DateTime date1 = DateTime.Now;
+DateTime date2 = DateTime.UtcNow;
+DateTime date3 = DateTime.Today;
+
+ var result = date3 - dataNacimento;
+
+
+
+ var idade = result.TotalDays/365;
+
+ if(idade > 30 ){
+    Console.WriteLine("Parabéns você tem disconto no seu seguro de carro e moto");
+ }
+ 
+/*
+Console.WriteLine(date2);
+Console.WriteLine(date3);*/
+
+
+
+
+
+
+
+
