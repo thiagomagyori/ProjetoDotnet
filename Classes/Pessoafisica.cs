@@ -43,16 +43,48 @@ namespace Projetoc_.Classes
 
 
 
-        //DateTime
+        //DateTime o metodo é bool então temos que informar se vai dar true e false
         public bool ValidarDate(DateTime DataNasc)
         {
-         throw new NotImplementedException();
+          DateTime dataAtual = DateTime.Today;
+         var idade = (dataAtual - DataNasc).TotalDays/365;
+
+          if(idade >= 18){
+            Console.WriteLine("Parabéns você tem disconto no seu seguro de carro e moto");
+           return true;
+          }else{
+            Console.WriteLine("Você não tem desconto");
+            return false;
+          }
+
+          
+          
+          
+        throw new NotImplementedException();
         }
 
         //String
         public bool ValidarDate(string DataNasc)
         {
-            throw new NotImplementedException();
+           //conversão implícita 
+           if (DateTime.TryParse(DataNasc, out DateTime dataConvertida))
+           {
+               DateTime dataAtual = DateTime.Today;
+               double idade = (dataAtual - dataConvertida).TotalDays / 365;
+
+               if(idade >= 18){
+               Console.WriteLine("Parabéns você tem disconto no seu seguro de carro e moto");
+               return true;
+          }else{
+               Console.WriteLine("Você não tem desconto");
+               return false;
+          }
+
+           
+           }
+           return false;
         }
+
+
     }
 }

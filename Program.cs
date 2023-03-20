@@ -1,17 +1,25 @@
 ﻿//fazendo uso da classes
 using Projetoc_.Classes;
 
-//metodo construtor
+//metodo construtor instanciando as classes
 Pessoafisica novaPessoafisica = new Pessoafisica();
-Pessoajuritica novaPessoajuridica = new Pessoajuritica();
+Endereco novoEnderecoPf = new Endereco();
 
 //Atribuição de valores
-
 novaPessoafisica.nome = "Thiago";
 novaPessoafisica.cpf = 494745638;
-novaPessoafisica.dataNac = new DateTime(192, 01, 01);
-/*novaPessoafisica.endereco = "Rua dos bamdeirantes n-07";*/
+novaPessoafisica.dataNac = new DateTime(2008,02,13);
+novaPessoafisica.endereco = novoEnderecoPf; //atribuindo a classe abistrata
 novaPessoafisica.rendimento = 4000.00f; // para força ele a converter para float
+
+
+
+//Atribuição de valores endereço
+novoEnderecoPf.logradouro = "Rua dos bamdeirantes";
+novoEnderecoPf.numero = 7;
+novoEnderecoPf.complemento = "Rua sem saída";
+novoEnderecoPf.endComercial = true;
+
 
 /*
 //imprimindo
@@ -48,8 +56,8 @@ Console.WriteLine(novaPessoajuridica.CalcularImposto(valor));*/
 
 
                                       //começa no formato americano  month-day-year (mês-dia-ano).
-DateTime dataNacimento = new DateTime (1992,02,13);
-
+//DateTime dataNacimento = new DateTime (1992,02,13);
+/*
 DateTime date1 = DateTime.Now;
 DateTime date2 = DateTime.UtcNow;
 DateTime date3 = DateTime.Today;
@@ -64,14 +72,24 @@ DateTime date3 = DateTime.Today;
     Console.WriteLine("Parabéns você tem disconto no seu seguro de carro e moto");
  }
  
-/*
 Console.WriteLine(date2);
-Console.WriteLine(date3);*/
+Console.WriteLine(date3);
+
+Console.WriteLine(novaPessoafisica.ValidarDate(dataNac));*/
+
+//Console.WriteLine(novaPessoafisica.ValidarDate("13/02/1992"));
+
+
+//============================PJ===================================
+//Pessoajuritica novaPessoajuridica = new Pessoajuritica();
 
 
 
+Console.WriteLine(@$"
 
-
-
+Nome: {novaPessoafisica.nome}
+Endereço: {novoEnderecoPf.logradouro}, {novoEnderecoPf.numero}
+Vai ter deconto no seguro: {novaPessoafisica.ValidarDate(novaPessoafisica.dataNac)}
+");
 
 
