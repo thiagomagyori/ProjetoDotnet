@@ -79,17 +79,45 @@ Console.WriteLine(novaPessoafisica.ValidarDate(dataNac));*/
 
 //Console.WriteLine(novaPessoafisica.ValidarDate("13/02/1992"));
 
-
-//============================PJ===================================
-//Pessoajuritica novaPessoajuridica = new Pessoajuritica();
-
-
-
+/*
 Console.WriteLine(@$"
 
 Nome: {novaPessoafisica.nome}
 Endereço: {novoEnderecoPf.logradouro}, {novoEnderecoPf.numero}
 Vai ter deconto no seguro: {novaPessoafisica.ValidarDate(novaPessoafisica.dataNac)}
-");
+");*/
 
+//============================PJ===================================
+Pessoajuritica novaPessoajuridica = new Pessoajuritica();
+Endereco novoEnderecoPj = new Endereco();
+
+
+
+
+
+//CHAMANDO A FUNÇÃO E PASSANDOUM VALOR PARA ELA 
+//Console.WriteLine(novaPessoajuridica.Validcnpj("34.865.466/0001-79"));
+//metodo construtor instanciando as classes
+
+//Atribuição de valores
+novaPessoajuridica.razaoSocial = "Devs System";
+novaPessoajuridica.cnpj = "34.865.466/0001--79";
+novaPessoajuridica.rendimento = 4000.00f; // para força ele a converter para float
+
+
+
+//Atribuição de valores endereço
+novoEnderecoPj.logradouro = "Rua tira dentes";
+novoEnderecoPj.numero = 86;
+novoEnderecoPj.complemento = "Av Principal";
+novoEnderecoPj.endComercial = true;
+
+novaPessoajuridica.endereco = novoEnderecoPj;
+
+Console.WriteLine(@$"
+
+Razão Social: {novaPessoajuridica.razaoSocial}
+Endereço: {novoEnderecoPj.logradouro}, {novoEnderecoPj.numero}
+CNPJ: {novaPessoajuridica.cnpj} - Valido: {novaPessoajuridica.Validcnpj(novaPessoajuridica.cnpj)}
+");
 
