@@ -77,6 +77,9 @@ namespace Projetoc_.Classes
 
         }
 
-
+        internal object ValidarCnpj(string cnpj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

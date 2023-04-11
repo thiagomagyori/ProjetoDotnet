@@ -85,6 +85,14 @@ namespace Projetoc_.Classes
            return false;
         }
 
+        internal void Inserir(Pessoajuritica novaPjIn)
+        {
+            throw new NotImplementedException();
+        }
 
+        internal List<Pessoajuritica> LerArquivo()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
